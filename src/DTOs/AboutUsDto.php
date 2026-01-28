@@ -10,7 +10,6 @@ use Vigihdev\WpShareds\Contracts\AboutUsInterface;
 final class AboutUsDto implements AboutUsInterface
 {
 
-
     public function __construct(
         private readonly string $logoUrl,
         private readonly string $description,
