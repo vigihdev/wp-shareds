@@ -4,7 +4,7 @@
 .DS_Store
 .phpunit.result.cache
 .phpunit.cache
-phpunit.xml
+# phpunit.xml
 local-dev
 vendor
 scripts
