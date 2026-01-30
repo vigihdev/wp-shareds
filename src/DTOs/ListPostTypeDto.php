@@ -12,9 +12,7 @@ final class ListPostTypeDto implements ListPostTypeInterface
 
     public function __construct(
         private readonly string $title,
-        #[SerializedName('image_url')]
         private readonly string $imageUrl,
-        #[SerializedName('action_url')]
         private readonly string $actionUrl,
         private readonly string $snippet
 

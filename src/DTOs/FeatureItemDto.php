@@ -11,7 +11,6 @@ final class FeatureItemDto implements FeatureItemInterface
 {
     public function __construct(
         private readonly string $title,
-        #[SerializedName('icon_url')]
         private readonly string $iconUrl,
         private readonly string $description
     ) {}

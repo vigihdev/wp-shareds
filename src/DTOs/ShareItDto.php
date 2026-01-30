@@ -12,9 +12,7 @@ final class ShareItDto implements ShareItInterface
 
     public function __construct(
         private readonly string $name,
-        #[SerializedName('icon_url')]
         private readonly string $iconUrl,
-        #[SerializedName('share_url')]
         private readonly string $shareUrl,
     ) {}
 

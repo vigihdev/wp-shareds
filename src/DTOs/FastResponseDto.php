@@ -10,13 +10,9 @@ use Symfony\Component\Serializer\Annotation\SerializedName;
 final class FastResponseDto implements FastResponseInterface
 {
     public function __construct(
-        #[SerializedName('fast_value')]
         private readonly string $fastValue,
-        #[SerializedName('fast_type')]
         private readonly string $fastType,
-        #[SerializedName('icon_url')]
         private readonly string $iconUrl,
-        #[SerializedName('action_url')]
         private readonly string $actionUrl,
     ) {}
 
