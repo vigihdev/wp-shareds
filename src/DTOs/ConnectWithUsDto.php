@@ -12,9 +12,7 @@ final class ConnectWithUsDto implements ConnectWithUsInterface
 
     public function __construct(
         private readonly string $name,
-        #[SerializedName('icon_url')]
         private readonly string $iconUrl,
-        #[SerializedName('action_url')]
         private readonly string $actionUrl,
     ) {}
 

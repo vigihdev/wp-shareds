@@ -12,7 +12,6 @@ final class OurClientDto implements OurClientInterface
 
     public function __construct(
         private readonly string $name,
-        #[SerializedName('icon_url')]
         private readonly string $imageUrl
     ) {}
 

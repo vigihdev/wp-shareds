@@ -13,9 +13,7 @@ final class ReviewCustomerDto implements ReviewCustomerInterface
     public function __construct(
         private string $username,
         private float|int $rating,
-        #[SerializedName('image_url')]
         private string $imageUrl,
-        #[SerializedName('review_text')]
         private string $reviewText
 
     ) {}
