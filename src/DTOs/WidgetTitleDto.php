@@ -6,10 +6,8 @@ namespace Vigihdev\WpShareds\DTOs;
 
 use Vigihdev\WpShareds\Contracts\WidgetTitleInterface;
 
-
 final class WidgetTitleDto implements WidgetTitleInterface
 {
-
     public function __construct(
         private readonly string $name,
         private readonly string $title,
