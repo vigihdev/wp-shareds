@@ -6,7 +6,6 @@ namespace Vigihdev\WpShareds\DTOs;
 
 use Vigihdev\WpShareds\Contracts\QuestionAnswerInterface;
 
-
 final class QuestionAnswerDto implements QuestionAnswerInterface
 {
 

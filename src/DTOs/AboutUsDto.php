@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Vigihdev\WpShareds\DTOs;
 
+use Symfony\Component\Serializer\Annotation\SerializedName;
 use Vigihdev\WpShareds\Contracts\AboutUsInterface;
 
 
@@ -11,6 +12,7 @@ final class AboutUsDto implements AboutUsInterface
 {
 
     public function __construct(
+        #[SerializedName('logo_url')]
         private readonly string $logoUrl,
         private readonly string $description,
     ) {}

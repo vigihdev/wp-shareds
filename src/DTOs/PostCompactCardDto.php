@@ -5,18 +5,21 @@ declare(strict_types=1);
 namespace Vigihdev\WpShareds\DTOs;
 
 use Vigihdev\WpShareds\Contracts\PostCompactCardInterface;
-
+use Symfony\Component\Serializer\Annotation\SerializedName;
 
 final class PostCompactCardDto implements PostCompactCardInterface
 {
     public function __construct(
         private readonly string $title,
+        #[SerializedName('image_url')]
         private readonly string $imageUrl,
+        #[SerializedName('action_url')]
         private readonly string $actionUrl,
         private readonly string $snippet,
         private readonly string $author,
-        private readonly string $kategori,
+        #[SerializedName('published_date')]
         private readonly string $publishedDate,
+        private readonly string $kategori
     ) {}
 
     public function getTitle(): string

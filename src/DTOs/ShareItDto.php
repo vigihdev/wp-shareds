@@ -5,14 +5,16 @@ declare(strict_types=1);
 namespace Vigihdev\WpShareds\DTOs;
 
 use Vigihdev\WpShareds\Contracts\ShareItInterface;
-
+use Symfony\Component\Serializer\Annotation\SerializedName;
 
 final class ShareItDto implements ShareItInterface
 {
 
     public function __construct(
         private readonly string $name,
+        #[SerializedName('icon_url')]
         private readonly string $iconUrl,
+        #[SerializedName('share_url')]
         private readonly string $shareUrl,
     ) {}
 

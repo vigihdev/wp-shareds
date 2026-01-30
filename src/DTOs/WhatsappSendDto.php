@@ -5,13 +5,15 @@ declare(strict_types=1);
 namespace Vigihdev\WpShareds\DTOs;
 
 use Vigihdev\WpShareds\Contracts\WhatsappSendInterface;
+use Symfony\Component\Serializer\Annotation\SerializedName;
 
 final class WhatsappSendDto implements WhatsappSendInterface
 {
 
-
     public function __construct(
+        #[SerializedName('image_url')]
         private readonly string $imageUrl,
+        #[SerializedName('contact_number')]
         private readonly string $contactNumber,
         private readonly string $username,
         private readonly string $message,

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Vigihdev\WpShareds\DTOs;
 
 use Vigihdev\WpShareds\Contracts\ReviewCustomerInterface;
-
+use Symfony\Component\Serializer\Annotation\SerializedName;
 
 final class ReviewCustomerDto implements ReviewCustomerInterface
 {
@@ -13,7 +13,9 @@ final class ReviewCustomerDto implements ReviewCustomerInterface
     public function __construct(
         private string $username,
         private float|int $rating,
+        #[SerializedName('image_url')]
         private string $imageUrl,
+        #[SerializedName('review_text')]
         private string $reviewText
 
     ) {}

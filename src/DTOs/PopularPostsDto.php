@@ -5,16 +5,20 @@ declare(strict_types=1);
 namespace Vigihdev\WpShareds\DTOs;
 
 use Vigihdev\WpShareds\Contracts\PopularPostsInterface;
+use Symfony\Component\Serializer\Annotation\SerializedName;
 
 final class PopularPostsDto implements PopularPostsInterface
 {
 
     public function __construct(
         private readonly string $title,
+        #[SerializedName('image_url')]
         private readonly string $imageUrl,
+        #[SerializedName('action_url')]
         private readonly string $actionUrl,
         private readonly string $snippet,
         private readonly string $author,
+        #[SerializedName('published_date')]
         private readonly string $publishedDate,
         private readonly string $kategori
     ) {}

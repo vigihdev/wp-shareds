@@ -6,10 +6,8 @@ namespace Vigihdev\WpShareds\DTOs;
 
 use Vigihdev\WpShareds\Contracts\WalkerMenuInterface;
 
-
 final class WalkerMenuDto implements WalkerMenuInterface
 {
-
 
     public function __construct(
         private readonly string $name,

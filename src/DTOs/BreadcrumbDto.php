@@ -6,11 +6,8 @@ namespace Vigihdev\WpShareds\DTOs;
 
 use Vigihdev\WpShareds\Contracts\BreadcrumbInterface;
 
-
 final class BreadcrumbDto implements BreadcrumbInterface
 {
-
-
     public function __construct(
         private readonly string $title,
         private readonly string $label,

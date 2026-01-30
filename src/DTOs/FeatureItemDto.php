@@ -5,12 +5,13 @@ declare(strict_types=1);
 namespace Vigihdev\WpShareds\DTOs;
 
 use Vigihdev\WpShareds\Contracts\FeatureItemInterface;
-
+use Symfony\Component\Serializer\Annotation\SerializedName;
 
 final class FeatureItemDto implements FeatureItemInterface
 {
     public function __construct(
         private readonly string $title,
+        #[SerializedName('icon_url')]
         private readonly string $iconUrl,
         private readonly string $description
     ) {}
